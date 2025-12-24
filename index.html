@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>和弦钢琴位置查询器</title>
+
+    <!-- Favicon 图标 -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>和弦钢琴位置查询器</h1>
+
+        <div class="chord-selector">
+            <select id="root-note">
+                <option value="C">C</option>
+                <option value="C#">C#</option>
+                <option value="D">D</option>
+                <option value="D#">D#</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="F#">F#</option>
+                <option value="G">G</option>
+                <option value="G#">G#</option>
+                <option value="A">A</option>
+                <option value="A#">A#</option>
+                <option value="B">B</option>
+            </select>
+
+            <select id="chord-type">
+                <!-- 三和弦 -->
+                <option value="major">大三和弦 (major)</option>
+                <option value="minor">小三和弦 (minor)</option>
+                <option value="dim">减三和弦 (dim)</option>
+                <option value="aug">增三和弦 (aug)</option>
+
+                <!-- 七和弦 -->
+                <option value="maj7">大七和弦 (maj7)</option>
+                <option value="min7">小七和弦 (min7)</option>
+                <option value="7">属七和弦 (7)</option>
+                <option value="min7b5">半减七和弦 (min7b5)</option>
+                <option value="dim7">减七和弦 (dim7)</option>
+
+                <!-- 九和弦 -->
+                <option value="maj9">大九和弦 (maj9)</option>
+                <option value="min9">小九和弦 (min9)</option>
+                <option value="9">属九和弦 (9)</option>
+
+                <!-- 其他和弦 -->
+                <option value="sus2">挂二和弦 (sus2)</option>
+                <option value="sus4">挂四和弦 (sus4)</option>
+                <option value="add9">加九和弦 (add9)</option>
+                <option value="6">大六和弦 (6)</option>
+                <option value="min6">小六和弦 (min6)</option>
+            </select>
+        </div>
+
+        <div class="result">
+            <div class="chord-name" id="chord-name">Cmajor</div>
+            <div class="notes" id="chord-notes">C3, E3, G3</div>
+        </div>
+
+        <div class="keyboard-range"></div>
+
+        <div class="piano-container">
+            <div class="piano" id="piano">
+                <!-- 钢琴键盘将通过JavaScript动态生成 -->
+            </div>
+        </div>
+
+        <div class="info-text">创建者：Liao H.-----抖音：lhc6019------bilibili：都说了听我指挥 </div>
+    </div>
+    <footer>
+    <p>© 2025 Liao H..All rights reserved.</p>
+    <!-- 如果2025年是首次发布年份，未来可以手动或动态更新为 © 2025-2026 -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
