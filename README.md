@@ -58,7 +58,7 @@ Run locally
 
 You can run it directly by opening the 'index.html' file in your browser.
 
-"Running online.
+Run online
 
 https://piano-chord-finding.netlify.app
 
